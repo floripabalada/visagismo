@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        google() // Este repositório é necessário para as dependências do Google
+        mavenCentral() // Este repositório é útil para outras dependências
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.1' // Versão do Google Services
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

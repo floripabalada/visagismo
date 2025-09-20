@@ -1,0 +1,29 @@
+{
+	"project_info": {
+		"project_number": "231797848083",
+		"project_id": "totem_barberia_vip-app",
+		"storage_bucket": "totem_barberia_vip-app.appspot.com"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:231797848083:android:f7ebb53afaf41505f667e6",
+				"android_client_info": {
+					"package_name": "com.totem_barberia_vip.app"
+				}
+			},
+			"oauth_client": [],
+			"api_key": [
+				{
+					"current_key": "AIzaSyAOA7NG3V4bttzfGU6y9tdhe5U__lWfW-E"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": []
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
+}
